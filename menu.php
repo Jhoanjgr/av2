@@ -92,10 +92,10 @@
                                     </li>
                                 </ul>
                             </li>
-                             <li class="has-sub">
+                            <li class="has-sub">
                                 <a href="#">
                                     <i class="fas fa-copy"></i>
-                                    <span class="bot-line"></span>Foro</a>
+                                    <span class="bot-line"></span>Pagos</a>
                                 <ul class="header3-sub-list list-unstyled">
                                     <li>
                                         <a href="login.html">Ver Horario</a>
@@ -107,6 +107,12 @@
                                         <a href="forget-pass.html">Registrar Aulas</a>
                                     </li>
                                 </ul>
+                            </li>
+                             <li class="has-sub">
+                                <a href="furyum/index.php">
+                                    <i class="fas fa-copy"></i>
+                                    <span class="bot-line"></span>Foro</a>
+                                
                             </li>
                         </ul>
                     </div>
