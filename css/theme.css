@@ -14649,3 +14649,43 @@ section {
 .vue-lists ul, .vue-lists ol {
     padding-left: 30px;
 }
+/* BOTONES */
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input[type="radio"]{
+    -webkit-appearance: none;
+}
+.label2{
+    height: 50px;
+   width: 140px;
+   border: 2,5px solid #2A8243;
+   margin: auto;
+   border-radius: 20px;
+   position: relative;
+   color: #2A8243;
+   transition: 0.5s;
+}
+.fa {
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%); 
+}
+.label2>span {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 0,1%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+input[type="radio"]:checked + label {
+    background-color: #2A8243;
+    color: #ffffff;
+    box-shadow: 0 15px 45px rgb(24,249,141,0.2);
+}

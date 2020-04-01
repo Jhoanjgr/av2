@@ -33,6 +33,12 @@
 /*global require:false */
 /*global jQuery:false */
 /*global moment:false */
+/**
+ *
+ * Credit for sparkles and bubble mixin:
+ * https://css-tricks.com/recreating-the-twitter-heart-animation/
+ *
+ */
 (function (factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
