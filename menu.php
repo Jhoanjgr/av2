@@ -48,16 +48,23 @@
                                     <span class="bot-line"></span>Inscripciones</a>
                                 <ul class="header3-sub-list list-unstyled">
                                     <li>
-                                        <a href="login.html">Nuevos</a>
+                                      <center>  <button type="button" class="btn btn-secondary mb-1" data-toggle="modal" data-target="#scrollmodal">Pre-Inscripción </button></center>
+                                   
                                     </li>
                                     <li>
-                                        <a href="register.html">Regulares</a>
+                                        
+                                       <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                        data-toggle="modal" data-target="#mediumModal2">Regulares </button></center>
+                                        
                                     </li>
                                     <li>
+
                                         <a href="forget-pass.html">Ver Registro</a>
                                     </li>
                                 </ul>
                             </li>
+                            <!-- modal small -->
+           
                             <li class="has-sub">
                                 <a href="#">
                                     <i class="fas fa-copy"></i>
@@ -479,3 +486,160 @@
             </div>
         </div>
         <!-- END HEADER MOBILE -->
+        <!-- modal scroll -->
+            <div class="modal fade" id="scrollmodal" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="scrollmodalLabel">Scrolling Long Content Modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                             <center> <label>Datos del representante</label></center>
+
+                                <div class="form-group">
+                                    <label>Nombre y Apellido</label>
+                                    <input class="au-input au-input--full" type="text" name="nombre_rep" placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label>Cédula de identidad</label>
+                                    <input class="au-input au-input--full" type="text" name="cedula_rep" placeholder="12345678">
+                                </div>
+                                <div class="form-group">
+                                    <label>Dirección</label>
+                                    <input class="au-input au-input--full" type="text" name="direccion_rep" placeholder="turmero, urbanización valle fresco casa numero 22">
+                                </div>
+                                <div class="form-group">
+                                    <label>Teléfono</label>
+                                    <input class="au-input au-input--full" type="number" name="telefono_rep" placeholder="04241234567">
+                                </div>
+                                <center> <label>Datos del Estudiante</label></center>
+                                <!-- <div class="login-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="aggree">Agree the terms and policy
+                                    </label>
+                                </div> -->
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrarse</button>
+                                <!-- <div class="social-login-content">
+                                    <div class="social-button">
+                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
+                                    </div>
+                                </div> -->
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal scroll -->
+        <!-- modal medium -->
+            <div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="mediumModalLabel">PRE-INSCRIBETE YA!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                             <center> <label>Datos del representante</label></center>
+
+                                <div class="form-group">
+                                    <label>Nombre y Apellido</label>
+                                    <input class="au-input au-input--full" type="text" name="nombre" placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label>Cédula de identidad</label>
+                                    <input class="au-input au-input--full" type="text" name="cedula" placeholder="12345678">
+                                </div>
+                                <div class="form-group">
+                                    <label>Correo Electrónico</label>
+                                    <input class="au-input au-input--full" type="email" name="correo" placeholder="abcd@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input class="au-input au-input--full" type="password" name="contraseña" placeholder="******">
+                                </div>
+                                <!-- <div class="login-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="aggree">Agree the terms and policy
+                                    </label>
+                                </div> -->
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrarse</button>
+                                <!-- <div class="social-login-content">
+                                    <div class="social-button">
+                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
+                                    </div>
+                                </div> -->
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal medium -->
+<!-- modal medium -->
+            <div class="modal fade" id="mediumModal2" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="mediumModalLabel">INSCRIBETE YA!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                             <center> <label>Datos del representante</label></center>
+
+                                <div class="form-group">
+                                    <label>Nombre y Apellido</label>
+                                    <input class="au-input au-input--full" type="text" name="nombre" placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label>Cédula de identidad</label>
+                                    <input class="au-input au-input--full" type="text" name="cedula" placeholder="12345678">
+                                </div>
+                                <div class="form-group">
+                                    <label>Correo Electrónico</label>
+                                    <input class="au-input au-input--full" type="email" name="correo" placeholder="abcd@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input class="au-input au-input--full" type="password" name="contraseña" placeholder="******">
+                                </div>
+                                <!-- <div class="login-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="aggree">Agree the terms and policy
+                                    </label>
+                                </div> -->
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrarse</button>
+                                <!-- <div class="social-login-content">
+                                    <div class="social-button">
+                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
+                                    </div>
+                                </div> -->
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal medium -->

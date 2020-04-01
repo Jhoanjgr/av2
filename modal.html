@@ -452,9 +452,67 @@
 									<div class="card-body">
 
 										<!-- Button trigger modal -->
-										<button type="button" class="btn btn-secondary mb-1" data-toggle="modal" data-target="#smallmodal">
-											Small
-										</button>
+										<form action="" method="post">
+                              
+
+                              
+                              <center><table><!-- hay que hacer los botones responsive -->
+                                <thead>
+                                  <tr>
+                                   <th><div class="form-group">
+                            <input type="radio" name="tipo" id="estudiante">
+                          <label class="label2" for="estudiante">
+                              <i class="" aria-hidden="true"></i>
+                              <span>Estudiante</span>
+                              </div>
+                          </label></th>
+                          <th>
+                            <div class="form-group">
+                              <input type="radio" name="tipo" id="profesor">
+                          <label class="label2" for="profesor">
+                              <i class="" aria-hidden="true"></i>
+                              <span>Profesor</span></div></label></th>
+                              <th>
+                                <div class="form-group">
+                                  <input type="radio" name="tipo" id="representante">
+                          <label class="label2" for="representante">
+                              <i class="" aria-hidden="true"></i>
+                              <span>Representante</span></div></label></th>
+                                  </tr>
+
+                              </table>
+
+                          </label>  
+                                </div>
+                                <div class="form-group">
+                                    <label>Nombre y Apellido</label>
+                                    <input class="au-input au-input--full" type="text" name="nombre" placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label>Cédula de identidad</label>
+                                    <input class="au-input au-input--full" type="text" name="cedula" placeholder="12345678">
+                                </div>
+                                <div class="form-group">
+                                    <label>Correo Electrónico</label>
+                                    <input class="au-input au-input--full" type="email" name="correo" placeholder="abcd@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input class="au-input au-input--full" type="password" name="contraseña" placeholder="******">
+                                </div>
+                                <!-- <div class="login-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="aggree">Agree the terms and policy
+                                    </label>
+                                </div> -->
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrarse</button>
+                                <!-- <div class="social-login-content">
+                                    <div class="social-button">
+                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
+                                    </div>
+                                </div> -->
+                            </form>
 
 										<button type="button" class="btn btn-secondary mb-1" data-toggle="modal" data-target="#mediumModal">
 											Medium
