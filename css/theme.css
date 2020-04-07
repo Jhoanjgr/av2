@@ -1615,6 +1615,7 @@ section {
 
 .menu-sidebar .navbar__list .navbar__sub-list li a {
     padding: 11.5px 0;
+    background-color:#434343;
 }
 
 .menu-sidebar__content {
@@ -2634,7 +2635,7 @@ section {
     position: relative;
 }
 
-.header3-wrap .header__navbar {
+.header3-wrap .header__navbar  {
     width: 100%;
     position: absolute;
     left: 50%;
@@ -2644,6 +2645,7 @@ section {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     top: -12px;
+
 }
 
 .header__logo {
@@ -14668,6 +14670,27 @@ input[type="radio"]{
    color: #2A8243;
    transition: 0.5s;
 }
+.label3{
+    background-color: #3FF182;
+  height: 50px;
+   width: 140px;
+   border: 2,5px solid #2A8243;
+   margin: auto;
+   border-radius: 20px;
+   position: relative;
+   color: #5E6460;
+   transition: 0.5s;  }
+   .label3:hover{
+    background-color: #3FF182;
+  height: 50px;
+   width: 140px;
+   border: 2,5px solid #2A8243;
+   margin: auto;
+   border-radius: 20px;
+   position: relative;
+   color: #FFFFFF;
+   transition: 0.5s;  }
+
 .fa {
     font-size: 10px;
     position: absolute;

@@ -15,11 +15,17 @@
                                     <span class="bot-line"></span>
                                 </a>
                                 <ul class="header3-sub-list list-unstyled">
-                                    <li>
-                                        <a href="index.html">Registrar Sección</a>
+                                     <li>
+                                        
+                                       <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                        data-toggle="modal" data-target="#mediumModal">Nueva </button></center>
+                                        
                                     </li>
-                                    <li>
-                                        <a href="index2.html">Lista de Secciones</a>
+                                     <li>
+                                        
+                                       <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                      onclick="location.href='secciones_listado.php'">Lista de secciones </button></center>
+                                        
                                     </li>
                                     
                                     </li>
@@ -57,10 +63,35 @@
                                         data-toggle="modal" data-target="#mediumModal2">Regulares </button></center>
                                         
                                     </li>
+                                  
                                     <li>
+                                         <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                        data-toggle="modal" data-target="#smallmodal2">Ver listado </button></center>
+                                       
 
-                                        <a href="forget-pass.html">Ver Registro</a>
                                     </li>
+                                     <li>
+                                        <center>  <button type="button" class="btn btn-secondary mb-1"onclick="location.href='verificar_inscripcion.php'">Realizar inscripción </button></center>
+
+                                    </li>
+                                    <li>
+                                         <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                        data-toggle="modal" data-target="#smallmodal3">Registrar personal </button></center>
+                                       
+
+                                    </li>
+                                    <li>
+                                         <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                        data-toggle="modal" data-target="#smallmodal4">Añadir Requisitos de Inscripción </button></center> <!-- realizar carrito de compras para poder añadir varios campos de texto a la vez -->
+                                       
+
+                                    </li>
+                                     <li>
+                                        <center>  <button type="button" class="btn btn-secondary mb-1"onclick="location.href='requisitos_listado.php'">Lista de requisitos  </button></center>
+
+                                    </li>
+                                   
+
                                 </ul>
                             </li>
                             <!-- modal small -->
@@ -120,6 +151,9 @@
                                     <i class="fas fa-copy"></i>
                                     <span class="bot-line"></span>Foro</a>
                                 
+                            </li>
+
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -491,7 +525,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="scrollmodalLabel">Scrolling Long Content Modal</h5>
+                            <h5 class="modal-title" id="scrollmodalLabel">PRE-INSCRIBETE YA!</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -516,7 +550,45 @@
                                     <label>Teléfono</label>
                                     <input class="au-input au-input--full" type="number" name="telefono_rep" placeholder="04241234567">
                                 </div>
+
                                 <center> <label>Datos del Estudiante</label></center>
+
+                                <div class="form-group">
+                                    <label>Nombre y Apellido</label>
+                                    <input class="au-input au-input--full" type="text" name="nombre_est" placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label>Cédula de identidad</label>
+                                    <input class="au-input au-input--full" type="text" name="cedula_est" placeholder="12345678">
+                                </div>
+                                <div class="form-group">
+                                    <label>Dirección</label>
+                                    <input class="au-input au-input--full" type="text" name="direccion_est" placeholder="turmero, urbanización valle fresco casa numero 22">
+                                </div>
+                                <div class="form-group">
+                                    <label>Teléfono</label>
+                                    <input class="au-input au-input--full" type="number" name="telefono_est" placeholder="04241234567">
+                                </div>
+                                 <div class="form-group">
+                                    <label>Correo</label>
+                                    <input class="au-input au-input--full" type="email" name="correo_est" placeholder="pedro@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Escuela o liceo de dónde viene</label>
+                                    <input class="au-input au-input--full" type="text" name="colegio_est" placeholder="U.E.E Andres bello">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control select2" required="required" title="Seleccione el año" name="año_cursar" style="width: 100%;"> 
+                                    <option selected="selected">Seleccione el año a cursar</option> 
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+
+                                    
+                                </div>
                                 <!-- <div class="login-checkbox">
                                     <label>
                                         <input type="checkbox" name="aggree">Agree the terms and policy
@@ -538,43 +610,113 @@
                     </div>
                 </div>
             </div>
-            <!-- end modal scroll -->
-        <!-- modal medium -->
+        <!--  end modal scroll
+                modal small -->
+         <div class="modal fade" id="smallmodal2" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                       <center>  <h5 class="modal-title" id="smallmodalLabel">Seleccione el listado que desea ver</h5></center>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="modal-body">
+                             <center><table><!-- hay que hacer los botones responsive -->
+                                <thead>
+                                  <tr>
+                                   <th><div class="form-group">
+                            <center>  <button type="button"  class="label3" onclick="location.href='listado_pre-inscritos.php'">Pre-Inscritos </button></center>
+                              
+                              </div>
+                          </label></th>
+                          <div class="form-group">
+                            <center>  <button type="button"  class="label3" onclick="location.href='listado_inscritos.php'">Inscritos </button></center>
+                              
+                              </div>
+                         
+                                  </tr>
+
+                              </table>
+                        </div>
+                     </div>
+                    <!--  <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Confirm</button>
+                    </div> -->
+                 </div>
+             </div>
+         </div>
+        <!--  end modal small
+              modal small -->
+         <div class="modal fade" id="smallmodal3" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                       <center>  <h5 class="modal-title" id="smallmodalLabel">Qué desea Registrar?</h5></center>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="modal-body">
+                             <center><table><!-- hay que hacer los botones responsive -->
+                                <thead>
+                                  <tr>
+                                   <th><div class="form-group">
+                            <center>  <button type="button"  class="label3" onclick="location.href='estudiantes_registrar.php'">Estudiantes </button></center>
+                              
+                              </div>
+                          </label></th>
+                          <div class="form-group">
+                            <center>  <button type="button"  class="label3" onclick="location.href='profesores_registrar.php'">Profesores </button></center>
+                              
+                              </div>
+                         <div class="form-group">
+                            <center>  <button type="button"  class="label3" onclick="location.href='representantes_registrar.php'">Representantes </button></center>
+                                  </tr>
+
+                              </table>
+                        </div>
+                     </div>
+                    <!--  <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Confirm</button>
+                    </div> -->
+                 </div>
+             </div>
+         </div>
+         <!-- modal medium -->
             <div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="mediumModalLabel">PRE-INSCRIBETE YA!</h5>
+                           <center> <h5 style="right: 50px;" class="modal-title" id="mediumModalLabel">Registrar Sección</h5></center>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <form action="" method="post">
-                             <center> <label>Datos del representante</label></center>
+                         <div class="modal-body">
+                            <form action="seccion_guardar.php" method="post">
+                             
 
                                 <div class="form-group">
-                                    <label>Nombre y Apellido</label>
-                                    <input class="au-input au-input--full" type="text" name="nombre" placeholder="Ingrese su nombre">
+                                    <label>Nombre</label>
+                                    <input class="au-input au-input--full" type="text" name="nombre_sec" placeholder="Ingrese su nombre">
                                 </div>
                                 <div class="form-group">
-                                    <label>Cédula de identidad</label>
-                                    <input class="au-input au-input--full" type="text" name="cedula" placeholder="12345678">
+                                    <label>Capacidad maxima de estudiantes</label>
+                                    <input class="au-input au-input--full" type="text" name="cantidad_secc" placeholder="12345678">
                                 </div>
-                                <div class="form-group">
-                                    <label>Correo Electrónico</label>
-                                    <input class="au-input au-input--full" type="email" name="correo" placeholder="abcd@gmail.com">
-                                </div>
-                                <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="au-input au-input--full" type="password" name="contraseña" placeholder="******">
-                                </div>
+                                    
+                            
                                 <!-- <div class="login-checkbox">
                                     <label>
                                         <input type="checkbox" name="aggree">Agree the terms and policy
                                     </label>
                                 </div> -->
-                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrarse</button>
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrar</button>
                                 <!-- <div class="social-login-content">
                                     <div class="social-button">
                                         <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
@@ -583,63 +725,27 @@
                                 </div> -->
                             </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary">Confirm</button>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
             <!-- end modal medium -->
-<!-- modal medium -->
-            <div class="modal fade" id="mediumModal2" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="mediumModalLabel">INSCRIBETE YA!</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="" method="post">
-                             <center> <label>Datos del representante</label></center>
-
-                                <div class="form-group">
-                                    <label>Nombre y Apellido</label>
-                                    <input class="au-input au-input--full" type="text" name="nombre" placeholder="Ingrese su nombre">
-                                </div>
-                                <div class="form-group">
-                                    <label>Cédula de identidad</label>
-                                    <input class="au-input au-input--full" type="text" name="cedula" placeholder="12345678">
-                                </div>
-                                <div class="form-group">
-                                    <label>Correo Electrónico</label>
-                                    <input class="au-input au-input--full" type="email" name="correo" placeholder="abcd@gmail.com">
-                                </div>
-                                <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="au-input au-input--full" type="password" name="contraseña" placeholder="******">
-                                </div>
-                                <!-- <div class="login-checkbox">
-                                    <label>
-                                        <input type="checkbox" name="aggree">Agree the terms and policy
-                                    </label>
-                                </div> -->
-                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrarse</button>
-                                <!-- <div class="social-login-content">
-                                    <div class="social-button">
-                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
-                                        <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
-                                    </div>
-                                </div> -->
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary">Confirm</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end modal medium -->
+        <!--  end modal small
+           <div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-lg" role="document">
+                   <div class="modal-content">
+                       <div class="modal-header">
+                           <h5 class="modal-title" id="mediumModalLabel">Medium Modal</h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                           </button>
+                       </div>
+                      
+                       <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                           <button type="button" class="btn btn-primary">Confirm</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           end modal medium -->
