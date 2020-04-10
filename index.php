@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+
+		<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,10 +39,81 @@
 
 <body class="animsition">
     <div class="page-wrapper">
-        <?php 
-        include_once "menu.php";
-         ?>
+       <!-- HEADER DESKTOP-->
+        <header class="header-desktop3 d-none d-lg-block">
+            <div class="section__content section__content--p35">
+                <div class="header3-wrap">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="images/icon/logo-white.png" alt="CoolAdmin" />
+                        </a>
+                    </div>
+                    <div class="header__navbar">
+                        <ul class="list-unstyled">
+                            <li class="has-sub">
+                                <a href="#">
+                                   <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                      onclick="location.href='usuario_nuevo.php'">Registrarse </button></center>
+                                   
+                                </a>
+                                <ul class="header3-sub-list list-unstyled">
+                                    
+                                     <li>
+                                        
+                                       
+                                        
+                                    </li>
+                                    
+                                    </li>
+                                </ul>
+                            </li>
+                             
+                        
+                            
+                       
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER DESKTOP-->
 
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile header-mobile-2 d-block d-lg-none">
+            <div class="section__content section__content--p35">
+                <div class="header3-wrap">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="images/icon/logo-white.png" alt="CoolAdmin" />
+                        </a>
+                    </div>
+                    <div class="header__navbar">
+                        <ul class="list-unstyled">
+                            <li class="has-sub">
+                                <a href="#">
+                                   <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                      onclick="location.href='usuario_nuevo.php'">Registrarse </button></center>
+                                   
+                                </a>
+                                <ul class="header3-sub-list list-unstyled">
+                                    
+                                     <li>
+                                        
+                                       
+                                        
+                                    </li>
+                                    
+                                    </li>
+                                </ul>
+                            </li>
+                             
+                        
+                            
+                       
+                    </div>
+                </div>
+            </div>
+       
+</header>
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7" style="background:#ECE9E9;">
             <img src="images/portada.jpg" alt="">

@@ -3,8 +3,8 @@
             <div class="section__content section__content--p35">
                 <div class="header3-wrap">
                     <div class="header__logo">
-                        <a href="#">
-                            <img src="images/icon/logo-white.png" alt="CoolAdmin" />
+                        <a href="home.php">
+                            <img src="images/icon/logo.png" alt="CoolAdmin" />
                         </a>
                     </div>
                     <div class="header__navbar">
@@ -36,8 +36,11 @@
                                     <i class="fas fa-copy"></i>
                                     <span class="bot-line"></span>Evaluaciones</a>
                                 <ul class="header3-sub-list list-unstyled">
-                                    <li>
-                                        <a href="login.html">Registrar Evaluación</a>
+                                     <li>
+                                         <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                        data-toggle="modal" data-target="#small-modal-evaluacion">real </button></center>
+                                       
+
                                     </li>
                                     <li>
                                         <a href="register.html">Realizar evaluacion</a>
@@ -303,19 +306,12 @@
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                <i class="fas fa-tachometer-alt"></i>Secciones</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="index.html">Dashboard 1</a>
-                                </li>
-                                <li>
-                                    <a href="index2.html">Dashboard 2</a>
-                                </li>
-                                <li>
-                                    <a href="index3.html">Dashboard 3</a>
-                                </li>
-                                <li>
-                                    <a href="index4.html">Dashboard 4</a>
+                                     <center>  <button type="button" class="btn btn-secondary mb-1" 
+                                        data-toggle="modal" data-target="#mediumModal">Nueva </button></center>
+                                        
                                 </li>
                             </ul>
                         </li>
@@ -648,8 +644,8 @@
                  </div>
              </div>
          </div>
-        <!--  end modal small
-              modal small -->
+       <!--  end modal small -->
+             <!--  modal small -->
          <div class="modal fade" id="smallmodal3" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
              <div class="modal-dialog modal-sm" role="document">
                  <div class="modal-content">
@@ -687,6 +683,52 @@
                  </div>
              </div>
          </div>
+           <!--  modal small -->
+         <div class="modal fade" id="small-modal-evaluacion" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                       <center>  <h5 class="modal-title" id="smallmodalLabel">Elija la materia correspondiente</h5></center>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="modal-body">
+                           <form action="seleciona_materia.php" method="post" accept-charset="utf-8">
+                             
+                        
+                                  
+                                  
+                           <center><table><!-- hay que hacer los botones responsive -->
+                                <div class="table-data__tool-left">
+                                    <div class="rs-select2--light rs-select2--md">
+                                        <select class="js-select2" name="property">
+                                            <option selected="selected" disabled="disable">Sus materias</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Option 2</option>
+                                        </select>
+                                        <div class="dropDownSelect2"></div>
+                                    </div>
+                                    <br>
+                                  <div>
+                                      <button class="au-btn au-btn--block au-btn--blue m-b-10" type="submit">Aceptar</button>
+                                  </div>
+                                       </form>
+                                    
+
+                              </table>
+                        </div>
+                     </div>
+                    <!--  <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Confirm</button>
+                    </div> -->
+                 </div>
+             </div>
+         </div>
+   
+         
          <!-- modal medium -->
             <div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -698,16 +740,28 @@
                             </button>
                         </div>
                          <div class="modal-body">
-                            <form action="seccion_guardar.php" method="post">
+                            <form action="secciones_guardar.php" method="post">
                              
-
+                                    <span aria-hidden="true">Año</span> <br>
+                               
+                                    <div class="rs-select2--light rs-select2--md">
+                                        <select class="js-select2" name="anio_seccion">
+                                            
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <div class="dropDownSelect2"></div>
+                                </div>
                                 <div class="form-group">
                                     <label>Nombre</label>
-                                    <input class="au-input au-input--full" type="text" name="nombre_sec" placeholder="Ingrese su nombre">
+                                    <input class="au-input au-input--full" type="text" name="nombre_seccion" placeholder="Ingrese su nombre">
                                 </div>
                                 <div class="form-group">
                                     <label>Capacidad maxima de estudiantes</label>
-                                    <input class="au-input au-input--full" type="text" name="cantidad_secc" placeholder="12345678">
+                                    <input class="au-input au-input--full" type="text" name="capacidad_seccion" placeholder="12345678">
                                 </div>
                                     
                             

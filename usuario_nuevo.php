@@ -47,7 +47,7 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="" method="post">
+                            <form action="usuario_guardar.php" method="post">
                               
 
                               
@@ -55,22 +55,22 @@
                                 <thead>
                                   <tr>
                                    <th><div class="form-group">
-                            <input type="radio" name="tipo" id="estudiante">
-                          <label class="label2" for="estudiante">
+                         <input required="required" type="radio" name="tipo_usuario" id="estud" value="estudiante">
+                          <label class="label2" for="estud">
                               <i class="" aria-hidden="true"></i>
                               <span>Estudiante</span>
                               </div>
                           </label></th>
                           <th>
                             <div class="form-group">
-                              <input type="radio" name="tipo" id="profesor">
-                          <label class="label2" for="profesor">
+                             <input required="required" type="radio" name="tipo_usuario" id="profe" value="profesor">
+                          <label class="label2" for="profe">
                               <i class="" aria-hidden="true"></i>
                               <span>Profesor</span></div></label></th>
                               <th>
                                 <div class="form-group">
-                                  <input type="radio" name="tipo" id="representante">
-                          <label class="label2" for="representante">
+                                  <input type="radio" name="tipo_usuario" id="repre" value="representante">
+                         <label required="required" class="label2" for="repre">
                               <i class="" aria-hidden="true"></i>
                               <span>Representante</span></div></label></th>
                                   </tr>
@@ -81,19 +81,19 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Nombre y Apellido</label>
-                                    <input class="au-input au-input--full" type="text" name="nombre" placeholder="Ingrese su nombre">
+                                    <input required="required" class="au-input au-input--full" type="text" name="nombre" placeholder="Ingrese su nombre">
                                 </div>
                                 <div class="form-group">
                                     <label>Cédula de identidad</label>
-                                    <input class="au-input au-input--full" type="text" name="cedula" placeholder="12345678">
+                                    <input required="required" class="au-input au-input--full" type="text" name="ci" placeholder="12345678">
                                 </div>
                                 <div class="form-group">
                                     <label>Correo Electrónico</label>
-                                    <input class="au-input au-input--full" type="email" name="correo" placeholder="abcd@gmail.com">
+                                    <input required="required" class="au-input au-input--full" type="email" name="correo" placeholder="abcd@gmail.com">
                                 </div>
                                 <div class="form-group">
                                     <label>Contraseña</label>
-                                    <input class="au-input au-input--full" type="password" name="contraseña" placeholder="******">
+                                    <input required="required" class="au-input au-input--full" type="password" name="clave" placeholder="******">
                                 </div>
                                 <!-- <div class="login-checkbox">
                                     <label>
@@ -111,7 +111,7 @@
                             <div class="register-link">
                                 <p>
                                     Ya tienes una cuenta?
-                                    <a href="#">Inicia Sesión</a>
+                                    <a href="login.php">Inicia Sesión</a>
                                 </p>
                             </div>
                         </div>

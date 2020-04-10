@@ -4,9 +4,11 @@ require_once("clasedb.php");
 
  function registrarSecciones(){
   global $db;
-  $nombre = $_REQUEST['nombre'];
+  $anio_seccion = $_REQUEST['anio_seccion'];
+  $nombre_seccion = $_REQUEST['nombre_seccion'];
+  $capacidad_seccion = $_REQUEST['capacidad_seccion'];
 
-  mysqli_query($db,"INSERT INTO secciones VALUES (NULL,'".$nombre."')");
+  mysqli_query($db,"INSERT INTO secciones VALUES (NULL,'".$anio_seccion."','".$nombre_seccion."','".$capacidad_seccion."')");
   $_SESSION['creada']=1;
  
 }
@@ -22,7 +24,7 @@ require_once("clasedb.php");
  function listarSecciones(){
   global $db;
   $resultados = [];
-  $r = mysqli_query($db,"SELECT * FROM secciones");
+  $r = mysqli_query($db,"SELECT * FROM secciones ORDER BY anio_seccion ASC " );
   while($temporal = mysqli_fetch_assoc($r) ) $resultados[] = $temporal;
   return $resultados;
 

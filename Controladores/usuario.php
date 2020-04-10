@@ -131,25 +131,33 @@ function cambiar_clave(){
 
  function registrarUsuario(){
   global $db;
- $ci = $_REQUEST['ci'];  
-$nombre = $_REQUEST['nombre'];  
-$clave= $_REQUEST['clave'];
-$clave=hash('sha256',$clave);  
-$correo = $_REQUEST['correo'];
-$tipo_usuario =$_REQUEST['tipo_usuario'];  
-$pregunta = $_REQUEST['pregunta'];  
-$respuesta = $_REQUEST['respuesta'];  
+  $tipo_usuario =$_REQUEST['tipo_usuario'];
+  $nombre = $_REQUEST['nombre'];
+  $ci = $_REQUEST['ci'];
+  $correo = $_REQUEST['correo'];  
+  $clave= $_REQUEST['clave'];
+  $clave=hash('sha256',$clave);
+  
+  
+
+   
 /*die ("INSERT INTO usuario VALUES (NULL,'".$ci."','".$nombre."','".$clave."','".$correo."','".$tipo_usuario."','".$pregunta."','".$respuesta."')") ;*/
 
 
 $cl =  mysqli_query($db, "SELECT * FROM usuarios WHERE ci='$ci'" );
-$c = mysqli_fetch_assoc($cl);
-if($c){
-  die('Cedula Duplicada');
+$cl2 =  mysqli_query($db, "SELECT * FROM usuarios WHERE correo='$correo'" );
+if( mysqli_num_rows($cl) > 0){
+
+  die('Cedula duplicada');
+}elseif (mysqli_num_rows($cl2) > 0) {
+  die('Correo duplicada');
 }else {
   
 
-  mysqli_query($db,"INSERT INTO usuarios VALUES (NULL,'".$ci."','".$nombre."','".$clave."','".$correo."','".$tipo_usuario."','".$pregunta."','".$respuesta."')");
+  
+  
+
+  mysqli_query($db,"INSERT INTO usuarios VALUES (NULL,'".$tipo_usuario."','".$nombre."','".$ci."','".$correo."','".$clave."')");
   
 for ($i=1; $i <= 18; $i++) { 
         $sql="INSERT INTO usuarios_has_privilegios VALUES(null,".$id_usuario.",".$i.",'no')";
