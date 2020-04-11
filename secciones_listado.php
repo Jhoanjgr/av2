@@ -6,44 +6,12 @@ if(isset($_REQUEST['operacion']) && $_REQUEST['operacion']=='eliminar'){
 }
  ?>	
  <html>
- <head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
-
-    <!-- Title Page-->
-    <title>Listado de seccion</title>
-
-    <!-- Fontfaces CSS-->
-    <link href="css/font-face.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-
-    <!-- Bootstrap CSS-->
-    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="css/theme.css" rel="stylesheet" media="all">
-
-</head>
-
+ 
  
 
 <?php 
         include_once "menu.php";
+        include_once "cabecera.php";
          ?>
 
 
@@ -79,8 +47,8 @@ if(isset($_REQUEST['operacion']) && $_REQUEST['operacion']=='eliminar'){
      
 	<th>Año</th>
 	<th>Nombre</th>
-	<th>Capacidad maxima de estudiantes</th>
-	<th>Acciones</th>>
+	<th >Capacidad </th>
+	<th>Acciones</th>
     </tr>
 </thead>
 <tbody>
@@ -108,7 +76,7 @@ foreach ($resultados as $key => $r){ ?>
                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                     <i class="zmdi zmdi-edit"></i>
                 </button>
-                <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                <button class="item"  data-placement="top" title="Delete" onclick="javascript:eliminar('<?=$r['id']?>')" data-toggle="modal" data-target="#smallmodal1">
                     <i class="zmdi zmdi-delete"></i>
                 </button>
                 <button class="item" data-toggle="tooltip" data-placement="top" title="More">
@@ -140,6 +108,52 @@ foreach ($resultados as $key => $r){ ?>
     </div>
   </div>
  </section>
+<!--  modal small -->
+         <div class="modal fade" id="smallmodal1" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                       
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="modal-body">
+                           <form action="secciones_listado.php?operacion=eliminar" method="post" accept-charset="utf-8">
+                
+              <div class="modal-body">
+                <center><h3>Seguro desea eliminar la sección?</h3></center>
+                <input type="hidden" name="id" id="id_seccion" value="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-secondary mb-1">Eliminar</button>
+              </div>
+                
+              </form>
+                        </div>
+                     </div>
+                    <!--  <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Confirm</button>
+                    </div> -->
+                 </div>
+             </div>
+         </div>
+           <!--  modal small -->
+
+
+
+
+
+
+ <script>
+  function eliminar(id_seccion) {
+    //console.log(id_cita+"--------");
+    $("#id_seccion").val(id_seccion);
+  }
+</script>
 
  <script type="text/javascript">
     (function(document) {
@@ -208,12 +222,7 @@ foreach ($resultados as $key => $r){ ?>
     <!-- Main JS-->
     <script src="js/main.js"></script>
 
-<script>
-  function eliminar(id_cita) {
-    //console.log(id_cita+"--------");
-    $("#id_cita").val(id_cita);
-  }
-</script>
+
 </body>
 
 

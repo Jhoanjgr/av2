@@ -38,7 +38,7 @@
                                 <ul class="header3-sub-list list-unstyled">
                                      <li>
                                          <center>  <button type="button" class="btn btn-secondary mb-1" 
-                                        data-toggle="modal" data-target="#small-modal-evaluacion">real </button></center>
+                                        data-toggle="modal" data-target="#small-modal-evaluacion">Crea evaluación </button></center>
                                        
 
                                     </li>
@@ -695,7 +695,7 @@
                      </div>
                      <div class="modal-body">
                          <div class="modal-body">
-                           <form action="seleciona_materia.php" method="post" accept-charset="utf-8">
+                           <form action="evaluacion_nueva.php" method="post" accept-charset="utf-8"> <!-- selecciona_materia.php -->
                              
                         
                                   
